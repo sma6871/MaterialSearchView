@@ -1,13 +1,11 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+
 
 buildscript {
     repositories {
         jcenter()
     }
-    dependencies {
-        classpath 'com.novoda:bintray-release:0.8.1'
-    }
+
 }
 
 android {
@@ -34,11 +32,3 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
 }
 
-publish {
-    userOrg = 'miguelcatalan'
-    groupId = 'com.miguelcatalan'
-    artifactId = 'materialsearchview'
-    publishVersion = '1.4.0'
-    desc = 'Cute library to implement SearchView in a Material Design Approach'
-    website = 'https://github.com/MiguelCatalan/MaterialSearchView'
-}
